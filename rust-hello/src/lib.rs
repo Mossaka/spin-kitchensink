@@ -10,5 +10,5 @@ fn hello_world(_req: Request) -> Result<Response> {
     println!("hello world from wasm module!");
     Ok(http::Response::builder()
         .status(200)
-        .body(Some("Writing a very simple Spin component in Rust".into()))?)
+        .body(Some("Writing a very simple Spin component in Rust AGAIN".into()))?)
 }

@@ -8,6 +8,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 /// A simple Spin HTTP component.
 #[http_component]
 fn hello_world(_req: Request) -> Result<Response> {
+    println!("'hello, world!' from the WAsm module!");
     let nanos = SystemTime::now()
         .duration_since(UNIX_EPOCH)
         .unwrap()
